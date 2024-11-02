@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for better contrast */
+    color: #333;
+}
+
+.header {
+    background-color: #000; /* Black header */
+    color: #fff; /* White text */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.site-title {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.hero-section {
+    border-radius: 8px;
+    background-color: #007f00; /* Green hero section */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+    border: 3px dashed #ff3b3b; /* Dashed border */
+}
+
+.hero-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+}
+
+.cta-button {
+    background-color: #ff3b3b; /* Red button */
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #e52e2e; /* Darker red on hover */
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.section {
+    background: white; /* White background for sections */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 2px dashed #007f00; /* Dashed green border */
+}
+
+h2 {
+    color: #007f00; /* Green for section headings */
+    border-bottom: 2px solid #007f00; /* Underline effect */
+    padding-bottom: 10px;
+}
+
+.download-list,
+.news-article {
+    margin: 10px 0;
+}
+
+.download-list li,
+.news-article h3 {
+    margin-bottom: 10px;
+}
+
+.news-article .read-more {
+    color: #007f00; /* Green links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-article .read-more:hover {
+    text-decoration: underline;
+    color: #ff3b3b; /* Red on hover */
+}
+
+footer {
+    background-color: #000; /* Black footer */
+    color: white; /* White text */
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #007f00; /* Green links in footer */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ff3b3b; /* Red on hover */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #007f00; /* Green button */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #005e00; /* Darker green on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header, .footer {
+        text-align: center;
+    }
+}
+
+.scrollable-nav {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+    padding: 10px; /* Padding around the nav */
+}
+
+.scrollable-nav ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+.scrollable-nav li {
+    display: inline-block; /* Display list items inline */
+    margin-right: 20px; /* Space between items */
+}
+
+.scrollable-nav a {
+    text-decoration: none; /* Remove underline */
+    color: #00ff44; /* Text color */
+    padding: 5px 10px; /* Padding for links */
+    border: 1px solid transparent; /* Border for hover effect */
+    transition: border-color 0.3s; /* Smooth transition for hover */
+}
+
+.scrollable-nav a:hover {
+    border-color: #007BFF; /* Change border color on hover */
+}
+
+#loader {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #333;
+    z-index: 1000; /* Make sure it appears on top */
+}
